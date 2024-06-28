@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Roboto;
+    background-color: #C4C4C4;
+}
+.header {
+    width: 100%;
+    padding-top: 62px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.search {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.search__input {
+
+    height: 61px;
+    margin-bottom: 265px;
+    padding: 5px 12px;
+    font-size: 48px;
+    border: none;
+}
+.search__results {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translateY(61px);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 30px;
+}
+.search__item {
+    overflow: hidden;
+    height: 44px;
+    padding-bottom: 9px;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: #E3E3E3;
+    border: 2px solid black;
+}
+.search__item:hover {
+    cursor: pointer;
+    background-color: #65CDF9;
+}
+.main {
+    padding-bottom: 72px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.cards {
+
+
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 503px;
+    min-height: 101px;
+    border: 1px solid black;
+    padding: 8px 16px;
+    margin: 0 auto;
+    background-color: #E27BEB;
+    
+}
+.card__content {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 24px;
+}
+
+.close-btn {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    display: flex;
+    background: none;
+    border: none;
+}
+.close-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.close-btn:before {
+    content: '';
+    width: 42px;
+    height: 4px;
+    transform:translate(43px, 43px) rotate(45deg);
+    border-bottom: 4px solid red;
+}
+.close-btn:after {
+    content: '';
+    width: 42px;
+    height: 4px;
+    border-bottom: 4px solid red;
+    transform: translate(0px, 43px) rotate(-45deg);
+}
